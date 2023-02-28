@@ -35,7 +35,7 @@ class Ocean : GameObject
     
     override func CheckBounds()
     {
-        if(position.x <= -773)
+        if(position.x <= -1065)
         {
             Reset()
         }
@@ -43,7 +43,7 @@ class Ocean : GameObject
     
     override func Reset()
     {
-        position.x = 773
+        position.x = 1065
     }
     
     func Move()
