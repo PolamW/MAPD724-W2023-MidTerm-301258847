@@ -8,14 +8,15 @@
 import GameplayKit
 import SpriteKit
 
-class Player : GameObject
+class PlayerLandscape : GameObject
 {
     //initializer
     init()
     {
-        super.init(imageString: "plane", initialScale: 1.5)
+        super.init(imageString: "planeLandscape", initialScale: 1.0)
         Start()
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -29,32 +30,33 @@ class Player : GameObject
     
     override func Update()
     {
-       CheckBounds()
+        CheckBounds()
     }
     
     override func CheckBounds()
     {
-        //constrain the player on the left boundary
-        if(position.y <= -270)
+        //constrain the player on the bottom boundary
+        if(position.y <= -145)
         {
-            position.y = -270
+            position.y = -145
         }
         
-        //constrain the player on the right boundary
-        if(position.y >= 270)
+        //constrain the player on the top boundary
+        if(position.y >= 145)
         {
-            position.y = 270
+            position.y = 145
         }
     }
     
     override func Reset()
     {
-        position.x = -540
+        position.x = -320
     }
     
     func TouchMove(newPos: CGPoint)
     {
         position = newPos
     }
+    
 }
 

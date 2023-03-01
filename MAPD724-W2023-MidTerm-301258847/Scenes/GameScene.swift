@@ -13,7 +13,7 @@ class GameScene: SKScene
     // instance variables
     var ocean1: OceanLandscape?
     var ocean2: OceanLandscape?
-    var player: Player?
+    var player: PlayerLandscape?
     var island: IslandLandscape?
     var clouds : [CloudLandscape] = []
     
@@ -37,7 +37,7 @@ class GameScene: SKScene
         addChild(ocean2!)
         
         // add the player to the Scene
-        player = Player()
+        player = PlayerLandscape()
         addChild(player!)
         
         // add the island to the Scene
@@ -79,18 +79,18 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: -540, y: pos.y))
+        player?.TouchMove(newPos: CGPoint(x: -320, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: -540, y: pos.y))
+        player?.TouchMove(newPos: CGPoint(x: -320, y: pos.y))
         
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: -540, y: pos.y))
+        player?.TouchMove(newPos: CGPoint(x: -320, y: pos.y))
         
     }
     

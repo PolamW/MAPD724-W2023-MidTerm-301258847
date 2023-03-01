@@ -76,7 +76,7 @@
 		E31139FA29ADDDBB00AD7DD9 /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E31139C429ADDDBB00AD7DD9 /* Dock51.ttf */; };
 		E31139FC29ADDDDD00AD7DD9 /* CloudLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31139FB29ADDDDD00AD7DD9 /* CloudLandscape.swift */; };
 		E31139FF29ADDDF900AD7DD9 /* OceanLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */; };
-		E3113A0129ADDE0C00AD7DD9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3113A0029ADDE0C00AD7DD9 /* Player.swift */; };
+		E3113A0129ADDE0C00AD7DD9 /* PlayerLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3113A0029ADDE0C00AD7DD9 /* PlayerLandscape.swift */; };
 		E3113A0529ADE00F00AD7DD9 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3113A0429ADE00F00AD7DD9 /* StartScene.sks */; };
 		E3113A0729ADE02100AD7DD9 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3113A0629ADE02100AD7DD9 /* StartScene.swift */; };
 		E3113A0929ADE04C00AD7DD9 /* EndScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3113A0829ADE04C00AD7DD9 /* EndScene.sks */; };
@@ -154,7 +154,7 @@
 		E31139C429ADDDBB00AD7DD9 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
 		E31139FB29ADDDDD00AD7DD9 /* CloudLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudLandscape.swift; sourceTree = "<group>"; };
 		E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanLandscape.swift; sourceTree = "<group>"; };
-		E3113A0029ADDE0C00AD7DD9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E3113A0029ADDE0C00AD7DD9 /* PlayerLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLandscape.swift; sourceTree = "<group>"; };
 		E3113A0429ADE00F00AD7DD9 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		E3113A0629ADE02100AD7DD9 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
 		E3113A0829ADE04C00AD7DD9 /* EndScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = EndScene.sks; sourceTree = "<group>"; };
@@ -243,7 +243,7 @@
 				E311398829ADDD9A00AD7DD9 /* IslandLandscape.swift */,
 				E31139FB29ADDDDD00AD7DD9 /* CloudLandscape.swift */,
 				E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */,
-				E3113A0029ADDE0C00AD7DD9 /* Player.swift */,
+				E3113A0029ADDE0C00AD7DD9 /* PlayerLandscape.swift */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -473,7 +473,7 @@
 				E311396A29ADDB1D00AD7DD9 /* GameScene.swift in Sources */,
 				E311398929ADDD9A00AD7DD9 /* IslandLandscape.swift in Sources */,
 				E311398429ADDD6300AD7DD9 /* GameObject.swift in Sources */,
-				E3113A0129ADDE0C00AD7DD9 /* Player.swift in Sources */,
+				E3113A0129ADDE0C00AD7DD9 /* PlayerLandscape.swift in Sources */,
 				E311398629ADDD7700AD7DD9 /* Layer.swift in Sources */,
 				E31139FC29ADDDDD00AD7DD9 /* CloudLandscape.swift in Sources */,
 				E311397F29ADDD2100AD7DD9 /* CollisionManager.swift in Sources */,

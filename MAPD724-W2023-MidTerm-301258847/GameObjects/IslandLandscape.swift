@@ -13,7 +13,7 @@ class IslandLandscape : GameObject
     // initializer / constructor
     init()
     {
-        super.init(imageString: "island", initialScale: 2.0)
+        super.init(imageString: "island", initialScale: 1.8)
         Start()
     }
     
