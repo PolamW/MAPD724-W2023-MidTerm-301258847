@@ -15,7 +15,7 @@ class GameScene: SKScene
     var ocean2: OceanLandscape?
     var player: Player?
     var island: IslandLandscape?
-    var clouds : [Cloud] = []
+    var clouds : [CloudLandscape] = []
     
     override func sceneDidLoad()
     {
@@ -47,7 +47,7 @@ class GameScene: SKScene
         // add 3 clouds to the Scene
         for _ in 0...1
         {
-            let cloud = Cloud()
+            let cloud = CloudLandscape()
             clouds.append(cloud)
             addChild(cloud)
         }

@@ -8,7 +8,7 @@
 import GameplayKit
 import SpriteKit
 
-class Cloud : GameObject
+class CloudLandscape : GameObject
 {
     //initializer or constructor
     init()
@@ -37,7 +37,7 @@ class Cloud : GameObject
     
     override func CheckBounds()
     {
-        if(position.y <= -902)
+        if(position.x <= -902)
         {
             Reset()
         }
