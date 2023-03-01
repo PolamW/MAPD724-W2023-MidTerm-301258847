@@ -13,7 +13,7 @@ class Cloud : GameObject
     //initializer or constructor
     init()
     {
-        super.init(imageString: "cloud", initialScale: 1.0)
+        super.init(imageString: "cloud", initialScale: 0.5)
         Start()
     }
     
@@ -51,21 +51,21 @@ class Cloud : GameObject
         //randomize the horizontal speed: -2 to 2
         horizontalSpeed = CGFloat((randomSource?.nextUniform())! * 4.0) - 2.0
         
-        //get a pseudo random number for the X position: -262 to 262
-        let randomX:Int = (randomSource?.nextInt(upperBound: 524))! - 262
-        position.x = CGFloat(randomX)
-        
-        //get a pseudo random number for the y position: 902 to 932
-        let randomY:Int = (randomSource?.nextInt(upperBound: 30))! + 902
+        //get a pseudo random number for the Y position: -262 to 262
+        let randomY:Int = (randomSource?.nextInt(upperBound: 524))! - 262
         position.y = CGFloat(randomY)
+        
+        //get a pseudo random number for the x position: 902 to 932
+        let randomX:Int = (randomSource?.nextInt(upperBound: 30))! + 902
+        position.x = CGFloat(randomX)
         isColliding = false
     }
     
     //Public method
     func Move()
     {
-        position.x -= horizontalSpeed!
-        position.y -= verticalSpeed!
+        position.y -= horizontalSpeed!
+        position.x -= verticalSpeed!
     }
     
 }

@@ -1,5 +1,5 @@
 //
-//  Ocean.swift
+//  Island.swift
 //  MAPD724-W2023-MidTerm-301258847
 //
 //  Created by Po Lam Wong on 28/2/2023.
@@ -8,23 +8,26 @@
 import GameplayKit
 import SpriteKit
 
-class Ocean : GameObject
+class IslandLandscape : GameObject
 {
-    // constructor / initializer
+    // initializer / constructor
     init()
     {
-        super.init(imageString: "ocean", initialScale: 2.0)
+        super.init(imageString: "island", initialScale: 2.0)
         Start()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder: has not been implemented")
+        fatalError("init(coder:) has not been implemented")
     }
+    
+    // LifeCycle Functions
     
     override func Start()
     {
-        zPosition = Layer.ocean.rawValue
+        zPosition = Layer.island.rawValue
         verticalSpeed = 5.0
+        Reset()
     }
     
     override func Update()
@@ -35,7 +38,7 @@ class Ocean : GameObject
     
     override func CheckBounds()
     {
-        if(position.x <= -1065)
+        if(position.x <= -876)
         {
             Reset()
         }
@@ -43,13 +46,17 @@ class Ocean : GameObject
     
     override func Reset()
     {
-        position.x = 1065
+        position.x = 876
+        // get a pseudo random number
+        let randomX:Int = (randomSource?.nextInt(upperBound: 626))! - 313
+        position.y = CGFloat(randomX)
+        isColliding = false
     }
     
+    // public method
     func Move()
     {
         position.x -= verticalSpeed!
     }
 }
-
 

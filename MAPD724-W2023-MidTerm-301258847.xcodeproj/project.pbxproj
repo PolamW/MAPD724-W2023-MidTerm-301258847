@@ -19,7 +19,7 @@
 		E311398229ADDD4E00AD7DD9 /* GameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311398129ADDD4E00AD7DD9 /* GameProtocol.swift */; };
 		E311398429ADDD6300AD7DD9 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311398329ADDD6300AD7DD9 /* GameObject.swift */; };
 		E311398629ADDD7700AD7DD9 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311398529ADDD7700AD7DD9 /* Layer.swift */; };
-		E311398929ADDD9A00AD7DD9 /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311398829ADDD9A00AD7DD9 /* Island.swift */; };
+		E311398929ADDD9A00AD7DD9 /* IslandLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E311398829ADDD9A00AD7DD9 /* IslandLandscape.swift */; };
 		E31139C529ADDDBB00AD7DD9 /* bullet.png in Resources */ = {isa = PBXBuildFile; fileRef = E311398C29ADDDBB00AD7DD9 /* bullet.png */; };
 		E31139C629ADDDBB00AD7DD9 /* plane3.png in Resources */ = {isa = PBXBuildFile; fileRef = E311398D29ADDDBB00AD7DD9 /* plane3.png */; };
 		E31139C729ADDDBB00AD7DD9 /* plane2.png in Resources */ = {isa = PBXBuildFile; fileRef = E311398E29ADDDBB00AD7DD9 /* plane2.png */; };
@@ -75,7 +75,7 @@
 		E31139F929ADDDBB00AD7DD9 /* dock51.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = E31139C329ADDDBB00AD7DD9 /* dock51.woff2 */; };
 		E31139FA29ADDDBB00AD7DD9 /* Dock51.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E31139C429ADDDBB00AD7DD9 /* Dock51.ttf */; };
 		E31139FC29ADDDDD00AD7DD9 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31139FB29ADDDDD00AD7DD9 /* Cloud.swift */; };
-		E31139FF29ADDDF900AD7DD9 /* Ocean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31139FE29ADDDF900AD7DD9 /* Ocean.swift */; };
+		E31139FF29ADDDF900AD7DD9 /* OceanLandscape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */; };
 		E3113A0129ADDE0C00AD7DD9 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3113A0029ADDE0C00AD7DD9 /* Player.swift */; };
 		E3113A0529ADE00F00AD7DD9 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = E3113A0429ADE00F00AD7DD9 /* StartScene.sks */; };
 		E3113A0729ADE02100AD7DD9 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3113A0629ADE02100AD7DD9 /* StartScene.swift */; };
@@ -97,7 +97,7 @@
 		E311398129ADDD4E00AD7DD9 /* GameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameProtocol.swift; sourceTree = "<group>"; };
 		E311398329ADDD6300AD7DD9 /* GameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		E311398529ADDD7700AD7DD9 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
-		E311398829ADDD9A00AD7DD9 /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		E311398829ADDD9A00AD7DD9 /* IslandLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandLandscape.swift; sourceTree = "<group>"; };
 		E311398C29ADDDBB00AD7DD9 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 		E311398D29ADDDBB00AD7DD9 /* plane3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane3.png; sourceTree = "<group>"; };
 		E311398E29ADDDBB00AD7DD9 /* plane2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane2.png; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 		E31139C329ADDDBB00AD7DD9 /* dock51.woff2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dock51.woff2; sourceTree = "<group>"; };
 		E31139C429ADDDBB00AD7DD9 /* Dock51.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Dock51.ttf; sourceTree = "<group>"; };
 		E31139FB29ADDDDD00AD7DD9 /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
-		E31139FE29ADDDF900AD7DD9 /* Ocean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ocean.swift; sourceTree = "<group>"; };
+		E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanLandscape.swift; sourceTree = "<group>"; };
 		E3113A0029ADDE0C00AD7DD9 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		E3113A0429ADE00F00AD7DD9 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		E3113A0629ADE02100AD7DD9 /* StartScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
@@ -240,9 +240,9 @@
 		E311398729ADDD8600AD7DD9 /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
-				E311398829ADDD9A00AD7DD9 /* Island.swift */,
+				E311398829ADDD9A00AD7DD9 /* IslandLandscape.swift */,
 				E31139FB29ADDDDD00AD7DD9 /* Cloud.swift */,
-				E31139FE29ADDDF900AD7DD9 /* Ocean.swift */,
+				E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */,
 				E3113A0029ADDE0C00AD7DD9 /* Player.swift */,
 			);
 			path = GameObjects;
@@ -471,7 +471,7 @@
 			files = (
 				E311397D29ADDD0800AD7DD9 /* ScoreManager.swift in Sources */,
 				E311396A29ADDB1D00AD7DD9 /* GameScene.swift in Sources */,
-				E311398929ADDD9A00AD7DD9 /* Island.swift in Sources */,
+				E311398929ADDD9A00AD7DD9 /* IslandLandscape.swift in Sources */,
 				E311398429ADDD6300AD7DD9 /* GameObject.swift in Sources */,
 				E3113A0129ADDE0C00AD7DD9 /* Player.swift in Sources */,
 				E311398629ADDD7700AD7DD9 /* Layer.swift in Sources */,
@@ -482,7 +482,7 @@
 				E311396C29ADDB1D00AD7DD9 /* GameViewController.swift in Sources */,
 				E311396429ADDB1D00AD7DD9 /* AppDelegate.swift in Sources */,
 				E311398229ADDD4E00AD7DD9 /* GameProtocol.swift in Sources */,
-				E31139FF29ADDDF900AD7DD9 /* Ocean.swift in Sources */,
+				E31139FF29ADDDF900AD7DD9 /* OceanLandscape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

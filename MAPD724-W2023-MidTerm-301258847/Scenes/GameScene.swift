@@ -11,10 +11,10 @@ var screenHeight: CGFloat?
 class GameScene: SKScene
 {
     // instance variables
-    var ocean1: Ocean?
-    var ocean2: Ocean?
+    var ocean1: OceanLandscape?
+    var ocean2: OceanLandscape?
     var player: Player?
-    var island: Island?
+    var island: IslandLandscape?
     var clouds : [Cloud] = []
     
     override func sceneDidLoad()
@@ -27,13 +27,13 @@ class GameScene: SKScene
         name = "GAME"
         
         // add the first ocean to the Scene
-        ocean1 = Ocean()
+        ocean1 = OceanLandscape()
         ocean1?.Reset()
         addChild(ocean1!)
         
         // add the second ocean to the scene
-        ocean2 = Ocean()
-        ocean2?.position.y = -1065
+        ocean2 = OceanLandscape()
+        ocean2?.position.x = -627
         addChild(ocean2!)
         
         // add the player to the Scene
@@ -41,11 +41,11 @@ class GameScene: SKScene
         addChild(player!)
         
         // add the island to the Scene
-        island = Island()
+        island = IslandLandscape()
         addChild(island!)
         
         // add 3 clouds to the Scene
-        for _ in 0...2
+        for _ in 0...1
         {
             let cloud = Cloud()
             clouds.append(cloud)
@@ -79,18 +79,18 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -540, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -540, y: pos.y))
         
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -540, y: pos.y))
         
     }
     
