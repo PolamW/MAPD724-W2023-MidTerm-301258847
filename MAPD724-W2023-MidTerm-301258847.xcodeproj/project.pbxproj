@@ -240,10 +240,8 @@
 		E311398729ADDD8600AD7DD9 /* GameObjects */ = {
 			isa = PBXGroup;
 			children = (
-				E311398829ADDD9A00AD7DD9 /* IslandLandscape.swift */,
-				E31139FB29ADDDDD00AD7DD9 /* CloudLandscape.swift */,
-				E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */,
-				E3113A0029ADDE0C00AD7DD9 /* PlayerLandscape.swift */,
+				E3FF025929AF1FD10016E32C /* Portrait */,
+				E3FF025829AF1FB30016E32C /* Landscape */,
 			);
 			path = GameObjects;
 			sourceTree = "<group>";
@@ -339,6 +337,24 @@
 				E31139C429ADDDBB00AD7DD9 /* Dock51.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		E3FF025829AF1FB30016E32C /* Landscape */ = {
+			isa = PBXGroup;
+			children = (
+				E311398829ADDD9A00AD7DD9 /* IslandLandscape.swift */,
+				E31139FB29ADDDDD00AD7DD9 /* CloudLandscape.swift */,
+				E31139FE29ADDDF900AD7DD9 /* OceanLandscape.swift */,
+				E3113A0029ADDE0C00AD7DD9 /* PlayerLandscape.swift */,
+			);
+			path = Landscape;
+			sourceTree = "<group>";
+		};
+		E3FF025929AF1FD10016E32C /* Portrait */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Portrait;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
