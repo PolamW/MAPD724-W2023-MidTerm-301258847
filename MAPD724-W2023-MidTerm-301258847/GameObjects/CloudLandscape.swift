@@ -1,6 +1,9 @@
 //
-//  Cloud.swift
+//  CloudLandscpe.swift
 //  MAPD724-W2023-MidTerm-301258847
+//  Name: Po Lam Wong, Lizolet
+//  Student ID: 301258847
+//  Description: Mail Pilot - Landscape version
 //
 //  Created by Po Lam Wong on 28/2/2023.
 //
@@ -13,6 +16,7 @@ class CloudLandscape : GameObject
     //initializer or constructor
     init()
     {
+        //adjusted the size from 1.0 to 0.5
         super.init(imageString: "cloud", initialScale: 0.5)
         Start()
     }
@@ -64,6 +68,7 @@ class CloudLandscape : GameObject
     //Public method
     func Move()
     {
+        //swap the position of x and y
         position.y -= horizontalSpeed!
         position.x -= verticalSpeed!
     }

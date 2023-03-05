@@ -1,8 +1,20 @@
+//
+//  MAPD724-W2023-MidTerm-301258847
+//  Name: Po Lam Wong, Lizolet
+//  Student ID: 301258847
+//  Description: Mail Pilot - Landscape version
+//
+//  Created by Po Lam Wong on 28/2/2023.
+//
 
 import SpriteKit
 import GameplayKit
 import AVFoundation
 import UIKit
+
+let screenSize = UIScreen.main.bounds
+var screenWidth: CGFloat?
+var screenHeight: CGFloat?
 
 class GameScene: SKScene
 {
@@ -15,10 +27,10 @@ class GameScene: SKScene
     
     override func sceneDidLoad()
     {
-//        screenWidth = frame.width
-//        screenHeight = frame.height
-//        print("Screen Width: \(String(describing: screenWidth))")
-//        print("Screen Height: \(String(describing: screenHeight))")
+        screenWidth = frame.width
+        screenHeight = frame.height
+        print("Screen Width: \(String(describing: screenWidth))")
+        print("Screen Height: \(String(describing: screenHeight))")
         
         name = "GAME"
         
@@ -73,6 +85,7 @@ class GameScene: SKScene
         }
     }
     
+    //adjusted the cgpoint from y-axis to x-axis and adjusted from -640 to -320
     func touchDown(atPoint pos : CGPoint)
     {
         player?.TouchMove(newPos: CGPoint(x: -320, y: pos.y))

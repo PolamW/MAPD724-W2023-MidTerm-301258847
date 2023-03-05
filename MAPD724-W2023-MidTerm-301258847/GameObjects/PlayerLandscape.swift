@@ -1,5 +1,5 @@
 //
-//  Player.swift
+//  PlayerLandscpe.swift
 //  MAPD724-W2023-MidTerm-301258847
 //  Name: Po Lam Wong, Lizolet
 //  Student ID: 301258847
@@ -7,7 +7,6 @@
 //
 //  Created by Po Lam Wong on 28/2/2023.
 //
-
 
 import GameplayKit
 import SpriteKit
@@ -17,6 +16,7 @@ class PlayerLandscape : GameObject
     //initializer
     init()
     {
+        //adjusted the size of player from 2.0 to 1.0
         super.init(imageString: "planeLandscape", initialScale: 1.0)
         Start()
     }

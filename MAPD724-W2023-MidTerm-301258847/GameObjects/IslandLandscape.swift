@@ -1,5 +1,5 @@
 //
-//  Island.swift
+//  IslandLandscpe.swift
 //  MAPD724-W2023-MidTerm-301258847
 //  Name: Po Lam Wong, Lizolet
 //  Student ID: 301258847
@@ -7,7 +7,6 @@
 //
 //  Created by Po Lam Wong on 28/2/2023.
 //
-
 
 import GameplayKit
 import SpriteKit
@@ -17,7 +16,8 @@ class IslandLandscape : GameObject
     // initializer / constructor
     init()
     {
-        super.init(imageString: "island", initialScale: 1.8)
+        //adjust the size of island from 2.0 to 1.5
+        super.init(imageString: "island", initialScale: 1.5)
         Start()
     }
     
@@ -51,8 +51,8 @@ class IslandLandscape : GameObject
     {
         position.x = 876
         // get a pseudo random number
-        let randomX:Int = (randomSource?.nextInt(upperBound: 626))! - 313
-        position.y = CGFloat(randomX)
+        let randomY:Int = (randomSource?.nextInt(upperBound: 626))! - 313
+        position.y = CGFloat(randomY)
         isColliding = false
     }
     
