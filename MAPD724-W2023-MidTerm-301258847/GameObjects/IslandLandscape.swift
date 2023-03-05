@@ -26,7 +26,6 @@ class IslandLandscape : GameObject
     }
     
     // LifeCycle Functions
-    
     override func Start()
     {
         zPosition = Layer.island.rawValue

@@ -1,9 +1,3 @@
-//
-//  GameScene.swift
-//  MAPD724-W2023-MidTerm-301258847
-//
-//  Created by Po Lam Wong on 2/3/2023.
-//
 
 import SpriteKit
 import GameplayKit
@@ -13,43 +7,43 @@ import UIKit
 class GameScene: SKScene
 {
     // instance variables
-    var ocean1: Ocean?
-    var ocean2: Ocean?
-    var player: Player?
-    var island: Island?
-    var clouds : [Cloud] = []
+    var ocean1: OceanLandscape?
+    var ocean2: OceanLandscape?
+    var player: PlayerLandscape?
+    var island: IslandLandscape?
+    var clouds : [CloudLandscape] = []
     
     override func sceneDidLoad()
     {
-        screenWidth = frame.width
-        screenHeight = frame.height
-        print("Screen Width: \(String(describing: screenWidth))")
-        print("Screen Height: \(String(describing: screenHeight))")
+//        screenWidth = frame.width
+//        screenHeight = frame.height
+//        print("Screen Width: \(String(describing: screenWidth))")
+//        print("Screen Height: \(String(describing: screenHeight))")
         
         name = "GAME"
         
         // add the first ocean to the Scene
-        ocean1 = Ocean()
+        ocean1 = OceanLandscape()
         ocean1?.Reset()
         addChild(ocean1!)
         
         // add the second ocean to the scene
-        ocean2 = Ocean()
-        ocean2?.position.y = -627
+        ocean2 = OceanLandscape()
+        ocean2?.position.x = -627
         addChild(ocean2!)
         
         // add the player to the Scene
-        player = Player()
+        player = PlayerLandscape()
         addChild(player!)
         
         // add the island to the Scene
-        island = Island()
+        island = IslandLandscape()
         addChild(island!)
         
-        // add 3 clouds to the Scene
-        for _ in 0...2
+        // add 2 clouds to the Scene
+        for _ in 0...1
         {
-            let cloud = Cloud()
+            let cloud = CloudLandscape()
             clouds.append(cloud)
             addChild(cloud)
         }
@@ -81,18 +75,18 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -320, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -320, y: pos.y))
         
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -320, y: pos.y))
         
     }
     
